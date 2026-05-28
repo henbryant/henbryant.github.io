@@ -27,6 +27,17 @@ h1 {
     line-height: 1;
 }
 
+.profile-heading {
+    gap: 1rem;
+}
+
+.img-profile-heading {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border: 0.2rem solid fade-out($primary, 0.75);
+}
+
 p.lead {
     font-size: 1.15rem;
     font-weight: 400;
