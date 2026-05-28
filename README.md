@@ -1,69 +1,93 @@
-# [Start Bootstrap - Resume](https://startbootstrap.com/theme/resume/)
+## このリポジトリについて
 
-[Resume](https://startbootstrap.com/theme/resume/) is a resume and CV theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
+このリポジトリは、GitHub Pages で公開している個人プロフィールサイトのソースコードです。
 
-## Preview
+Start Bootstrap の Resume テーマをベースに、Android アプリ開発者としての経歴、スキル、連絡先、LinkedIn / GitHub などのプロフィール情報を掲載しています。
 
-[![Resume Preview](https://assets.startbootstrap.com/img/screenshots/themes/resume.png)](https://startbootstrap.github.io/startbootstrap-resume/)
+ページ本文は主に `src/pug/index.pug`、スタイルは `src/scss/`、画像は `src/assets/` で管理しています。公開用の `index.html` や `css/`、`js/`、`assets/` はビルドによって生成され、GitHub Pages から配信されます。
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-resume/)**
+## 使い方
 
-## Status
+### 基本的な編集方法
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-resume/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
+ページ内容を変更する場合は、主に `src/pug/index.pug` を編集します。
 
-## Download and Installation
+スタイルを変更する場合は `src/scss/` 配下の SCSS ファイルを編集します。画像を差し替える場合は `src/assets/` 配下のファイルを更新します。
 
-To begin using this template, choose one of the following options to get started:
+リポジトリ直下の `index.html` は GitHub Pages で表示するための生成ファイルです。直接編集すると、次回ビルド時に `src/pug/index.pug` の内容で上書きされます。
 
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/resume/)
-- Install using npm: `npm i startbootstrap-resume`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-resume.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-resume)
+### ローカルで確認する
 
-## Usage
+初回は依存パッケージをインストールします。
 
-### Basic Usage
+```bash
+npm install
+```
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+ローカルでプレビューしながら編集する場合は、以下を実行します。
 
-### Advanced Usage
+```bash
+npm start
+```
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+このコマンドはブラウザでプレビューを開き、`src` 配下の変更を監視して自動で再読み込みします。
 
-#### npm Scripts
+### GitHub Pages 用にビルドする
 
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+GitHub Pages に反映する前は、以下を実行します。
 
-You must have npm installed in order to use this build environment.
+```bash
+npm run build:pages
+```
 
-## Bugs and Issues
+このコマンドは、まず `dist/` に HTML、CSS、JavaScript、画像を生成し、その後 GitHub Pages が読み込むリポジトリ直下へコピーします。
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-resume/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/resume/).
+生成・更新される主なファイルは以下です。
 
-## About
+```text
+dist/
+index.html
+css/
+js/
+assets/
+```
 
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+`npm run build` は `dist/` だけを更新します。GitHub Pages へ公開するためにリポジトリ直下の `index.html` も更新したい場合は、`npm run build:pages` を使います。
+
+### npm scripts
+
+- `npm run build`: HTML、CSS、JavaScript、画像を `dist/` に生成
+- `npm run build:pages`: `dist/` を生成し、GitHub Pages 用にリポジトリ直下へコピー
+- `npm run build:assets`: `src/assets/` のファイルを `dist/` にコピー
+- `npm run build:pug`: `src/pug/` の Pug を HTML に変換して `dist/` に出力
+- `npm run build:scripts`: `src/js/scripts.js` を `dist/` に出力
+- `npm run build:scss`: `src/scss/` の SCSS を CSS に変換して `dist/` に出力
+- `npm run clean`: 再ビルド前に `dist/` を削除
+- `npm run start:debug`: デバッグモードで起動
+- `npm start`: ローカルプレビューを起動し、`src` 配下の変更を監視
+
+このビルド環境を使うには、npm が必要です。
+
+## 不具合・課題
+
+このリポジトリ固有の修正や改善は、通常の GitHub フローに従って issue または pull request で管理します。
+
+テンプレート本体に関する不具合は、Start Bootstrap の公式リポジトリまたはテーマページを参照してください。
+
+- <https://github.com/StartBootstrap/startbootstrap-resume>
+- <https://startbootstrap.com/theme/resume/>
+
+## テーマについて
+
+このサイトは、Start Bootstrap が提供する Resume テーマをベースにしています。
+
+Start Bootstrap は Bootstrap ベースの無料テーマやテンプレートを提供しているオープンソースプロジェクトです。各テンプレートは MIT ライセンスで公開されています。
 
 - <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
+- <https://github.com/StartBootstrap/startbootstrap-resume>
 
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+## 著作権とライセンス
 
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
+Copyright 2013-2023 Start Bootstrap LLC.
 
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2023 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) license.
+このテンプレートのコードは [MIT License](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) のもとで公開されています。
