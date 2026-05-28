@@ -29,11 +29,12 @@ h1 {
 
 .profile-heading {
     gap: 1rem;
+    justify-content: space-between;
 }
 
 .img-profile-heading {
-    width: 4rem;
-    height: 4rem;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
     border: 0.2rem solid fade-out($primary, 0.75);
 }

@@ -10857,11 +10857,12 @@ h1, .h1 {
 
 .profile-heading {
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .img-profile-heading {
-  width: 4rem;
-  height: 4rem;
+  width: 8rem;
+  height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
   border: 0.2rem solid rgba(15, 23, 42, 0.25);
