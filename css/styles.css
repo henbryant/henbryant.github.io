@@ -10934,6 +10934,20 @@ p.lead {
     display: block;
   }
 }
+@media (max-width: 767.98px) {
+  body.nav-open {
+    overflow: hidden;
+  }
+  body.nav-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1020;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
 .social-icons .social-icon {
   display: inline-flex;
   align-items: center;

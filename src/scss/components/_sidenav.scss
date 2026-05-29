@@ -71,3 +71,19 @@
         }
     }
 }
+
+@include media-breakpoint-down(md) {
+    body.nav-open {
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: 1020;
+            background: rgba($white, 0.0);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    }
+}

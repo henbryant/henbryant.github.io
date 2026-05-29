@@ -13,8 +13,21 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
+    const body = document.body;
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavbar = document.body.querySelector('#navbarResponsive');
+
+    if (responsiveNavbar) {
+        responsiveNavbar.addEventListener('show.bs.collapse', () => {
+            body.classList.add('nav-open');
+        });
+
+        responsiveNavbar.addEventListener('hide.bs.collapse', () => {
+            body.classList.remove('nav-open');
+        });
+    }
+
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
