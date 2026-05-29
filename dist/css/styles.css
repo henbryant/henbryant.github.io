@@ -10829,6 +10829,8 @@ textarea.form-control-lg {
 body {
   padding-top: 3.375rem;
   color: #6c757d;
+  background-color: #f7f8fc;
+  background-image: linear-gradient(180deg, rgba(247, 248, 252, 0.96) 0%, rgb(255, 255, 255) 100%);
 }
 
 @media (min-width: 992px) {
