@@ -10865,7 +10865,6 @@ h1, .h1 {
   height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 0.2rem solid rgba(15, 23, 42, 0.25);
 }
 
 p.lead {
@@ -10914,7 +10913,6 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
