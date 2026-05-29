@@ -10829,6 +10829,8 @@ textarea.form-control-lg {
 body {
   padding-top: 3.375rem;
   color: #6c757d;
+  background-color: #f7f8fc;
+  background-image: linear-gradient(180deg, rgba(247, 248, 252, 0.96) 0%, rgb(255, 255, 255) 100%);
 }
 
 @media (min-width: 992px) {
@@ -10865,7 +10867,6 @@ h1, .h1 {
   height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 0.2rem solid rgba(15, 23, 42, 0.25);
 }
 
 p.lead {
@@ -10914,7 +10915,6 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10932,6 +10932,20 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+  }
+}
+@media (max-width: 767.98px) {
+  body.nav-open {
+    overflow: hidden;
+  }
+  body.nav-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1020;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 }
 .social-icons .social-icon {
@@ -10959,27 +10973,35 @@ p.lead {
 
 section.resume-section {
   display: flex;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  align-items: stretch;
+  padding: 1rem;
   max-width: 75rem;
+  margin: 0 auto 1.5rem;
 }
 section.resume-section .resume-section-content {
   width: 100%;
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(247, 248, 252, 0.82) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
 }
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh;
+    min-height: auto;
   }
 }
 @media (min-width: 992px) {
   section.resume-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 1.5rem 3rem;
   }
+  section.resume-section .resume-section-content {
+    padding: 3rem;
+  }
+}
+hr.m-0 {
+  display: none;
 }
