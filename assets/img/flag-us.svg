@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="United States flag">
+  <rect width="640" height="480" fill="#b22234"/>
+  <rect y="0" width="640" height="40" fill="#fff"/>
+  <rect y="80" width="640" height="40" fill="#fff"/>
+  <rect y="160" width="640" height="40" fill="#fff"/>
+  <rect y="240" width="640" height="40" fill="#fff"/>
+  <rect y="320" width="640" height="40" fill="#fff"/>
+  <rect y="400" width="640" height="40" fill="#fff"/>
+  <rect width="280" height="280" fill="#3c3b6e"/>
+  <polygon points="40,40 52,86 100,86 58,110 70,156 40,132 10,156 22,110 0,86 48,86" fill="#fff"/>
+  <polygon points="40,100 52,146 100,146 58,170 70,216 40,192 10,216 22,170 0,146 48,146" fill="#fff"/>
+  <polygon points="100,40 112,86 160,86 118,110 130,156 100,132 70,156 82,110 40,86 88,86" fill="#fff"/>
+</svg>

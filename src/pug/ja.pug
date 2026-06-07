@@ -1,0 +1,88 @@
+doctype html
+html(lang='ja')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Bryant-HP
+
+        link(rel='icon', type='image/x-icon', href='assets/img/icon.png')
+
+        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        script(src='https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js')
+
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                span.d-block.d-lg-none Hen Bryant
+                span.d-none.d-lg-block
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.png', alt='Hen Bryant')
+            .nav-controls
+                a.lang-switch.d-none.d-lg-inline-flex(href='index.html', aria-label='English page')
+                    img.flag-icon(src='assets/img/flag-us.svg', alt='English')
+                a.lang-switch.d-lg-none(href='index.html', aria-label='English page')
+                    img.flag-icon(src='assets/img/flag-us.svg', alt='English')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#about') 概要
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#experience') 経歴
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') 学歴
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') スキル
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#interests') 興味
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#awards') 実績
+
+        .container-fluid.p-0
+
+            section#about.resume-section
+                .resume-section-content
+                    .profile-heading.d-flex.align-items-center
+                        h1.mb-0
+                            | Hen
+                            span.text-primary Bryant
+                        img.img-profile-heading.d-lg-none.rounded-circle(src='assets/img/profile.png', alt='Hen Bryant')
+                    .subheading.mb-5
+                        | アプリケーションエンジニア
+                    p.lead.mb-5
+                        span.d-block.mb-3
+                            | LY Corporation で Android エンジニアとして、Yahoo! カーナビと Yahoo! マップの要件定義から性能改善まで携わりました。2026年6月に三井住友カードへ入社しました。
+                        span.d-block.mb-3
+                            | モビリティ技術、位置情報サービス、FinTech UX に強い関心があります。
+                        span.d-block.mb-2
+                            strong パートタイム / サイドオポチュニティ募集中
+                        span.d-block
+                            | ・稼働時間: 週 1–2 日（約 8–16 時間 / 週）
+                        span.d-block.mb-3
+                            | ・勤務スタイル: 完全リモート
+                        span.d-block.mb-2
+                            strong 言語:
+                        span.d-block
+                            | ・日本語（ネイティブ）
+                        span.d-block
+                            | ・中国語（ネイティブ）
+                        span.d-block
+                            | ・英語（業務レベル）
+                    .social-icons
+                        a.social-icon(href='mailto:bryant@ymail.ne.jp', aria-label='Email')
+                            i.fas.fa-envelope
+                        a.social-icon(href='https://www.linkedin.com/in/%E5%A2%A8%E6%B6%B5-%E8%BE%BA-031a8a394/')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(href='https://github.com/henbryant')
+                            i.fab.fa-github

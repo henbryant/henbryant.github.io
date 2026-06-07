@@ -31,8 +31,13 @@ html(lang='en')
                 span.d-block.d-lg-none Hen Bryant
                 span.d-none.d-lg-block
                     img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.png', alt='Hen Bryant')
-            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
+            .nav-controls
+                a.lang-switch.d-none.d-lg-inline-flex(href='ja.html', aria-label='日本語版へ')
+                    img.flag-icon(src='assets/img/flag-jp.svg', alt='日本語')
+                a.lang-switch.d-lg-none(href='ja.html', aria-label='日本語版へ')
+                    img.flag-icon(src='assets/img/flag-jp.svg', alt='日本語')
+                button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
             #navbarResponsive.collapse.navbar-collapse
                 ul.navbar-nav
                     li.nav-item
