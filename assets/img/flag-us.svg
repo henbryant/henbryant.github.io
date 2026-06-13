@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="United States flag">
+  <defs>
+    <polygon id="star" points="0,-8 2.35,-2.47 8,-2.47 3.6,1.0 5.4,6.5 0,3.4 -5.4,6.5 -3.6,1.0 -8,-2.47 -2.35,-2.47"/>
+  </defs>
+  <rect width="640" height="480" fill="#b22234"/>
+  <rect y="36.9231" width="640" height="36.9231" fill="#fff"/>
+  <rect y="110.7692" width="640" height="36.9231" fill="#fff"/>
+  <rect y="184.6154" width="640" height="36.9231" fill="#fff"/>
+  <rect y="258.4615" width="640" height="36.9231" fill="#fff"/>
+  <rect y="332.3077" width="640" height="36.9231" fill="#fff"/>
+  <rect y="406.1538" width="640" height="36.9231" fill="#fff"/>
+  <rect width="364.8" height="258.4615" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <use href="#star" transform="translate(33,21)"/>
+    <use href="#star" transform="translate(93,21)"/>
+    <use href="#star" transform="translate(153,21)"/>
+    <use href="#star" transform="translate(213,21)"/>
+    <use href="#star" transform="translate(273,21)"/>
+    <use href="#star" transform="translate(333,21)"/>
+
+    <use href="#star" transform="translate(63,49)"/>
+    <use href="#star" transform="translate(123,49)"/>
+    <use href="#star" transform="translate(183,49)"/>
+    <use href="#star" transform="translate(243,49)"/>
+    <use href="#star" transform="translate(303,49)"/>
+
+    <use href="#star" transform="translate(33,77)"/>
+    <use href="#star" transform="translate(93,77)"/>
+    <use href="#star" transform="translate(153,77)"/>
+    <use href="#star" transform="translate(213,77)"/>
+    <use href="#star" transform="translate(273,77)"/>
+    <use href="#star" transform="translate(333,77)"/>
+
+    <use href="#star" transform="translate(63,105)"/>
+    <use href="#star" transform="translate(123,105)"/>
+    <use href="#star" transform="translate(183,105)"/>
+    <use href="#star" transform="translate(243,105)"/>
+    <use href="#star" transform="translate(303,105)"/>
+
+    <use href="#star" transform="translate(33,133)"/>
+    <use href="#star" transform="translate(93,133)"/>
+    <use href="#star" transform="translate(153,133)"/>
+    <use href="#star" transform="translate(213,133)"/>
+    <use href="#star" transform="translate(273,133)"/>
+    <use href="#star" transform="translate(333,133)"/>
+
+    <use href="#star" transform="translate(63,161)"/>
+    <use href="#star" transform="translate(123,161)"/>
+    <use href="#star" transform="translate(183,161)"/>
+    <use href="#star" transform="translate(243,161)"/>
+    <use href="#star" transform="translate(303,161)"/>
+
+    <use href="#star" transform="translate(33,189)"/>
+    <use href="#star" transform="translate(93,189)"/>
+    <use href="#star" transform="translate(153,189)"/>
+    <use href="#star" transform="translate(213,189)"/>
+    <use href="#star" transform="translate(273,189)"/>
+    <use href="#star" transform="translate(333,189)"/>
+
+    <use href="#star" transform="translate(63,217)"/>
+    <use href="#star" transform="translate(123,217)"/>
+    <use href="#star" transform="translate(183,217)"/>
+    <use href="#star" transform="translate(243,217)"/>
+    <use href="#star" transform="translate(303,217)"/>
+
+    <use href="#star" transform="translate(33,245)"/>
+    <use href="#star" transform="translate(93,245)"/>
+    <use href="#star" transform="translate(153,245)"/>
+    <use href="#star" transform="translate(213,245)"/>
+    <use href="#star" transform="translate(273,245)"/>
+    <use href="#star" transform="translate(333,245)"/>
+  </g>
+</svg>

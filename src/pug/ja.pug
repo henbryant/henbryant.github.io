@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang='ja')
 
     head
 
@@ -12,51 +12,45 @@ html(lang='en')
 
         link(rel='icon', type='image/x-icon', href='assets/img/icon.png')
 
-        // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
         script(src='https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js')
 
-        // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
 
-        // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
     body#page-top
 
-        // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
             a.navbar-brand.js-scroll-trigger(href='#page-top')
                 span.d-block.d-lg-none Hen Bryant
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='Hen Bryant')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.png', alt='Hen Bryant')
             .nav-controls
-                a.lang-switch.d-none.d-lg-inline-flex(href='ja.html', aria-label='日本語版へ')
-                    img.flag-icon(src='assets/img/flag-jp.svg', alt='日本語')
-                a.lang-switch.d-lg-none(href='ja.html', aria-label='日本語版へ')
-                    img.flag-icon(src='assets/img/flag-jp.svg', alt='日本語')
+                a.lang-switch.d-none.d-lg-inline-flex(href='index.html', aria-label='English page')
+                    img.flag-icon(src='assets/img/flag-us.svg', alt='English')
+                a.lang-switch.d-lg-none(href='index.html', aria-label='English page')
+                    img.flag-icon(src='assets/img/flag-us.svg', alt='English')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
             #navbarResponsive.collapse.navbar-collapse
                 ul.navbar-nav
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#about') About
+                        a.nav-link.js-scroll-trigger(href='#about') 概要
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                        a.nav-link.js-scroll-trigger(href='#skills') スキル
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                        a.nav-link.js-scroll-trigger(href='#experience') 経歴
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') Education
+                        a.nav-link.js-scroll-trigger(href='#education') 学歴
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
+                        a.nav-link.js-scroll-trigger(href='#hobbies') 趣味
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#awards') Awards
+                        a.nav-link.js-scroll-trigger(href='#awards') 実績
 
-        // Page Content
         .container-fluid.p-0
 
-            // About
             section#about.resume-section
                 .resume-section-content
                     .profile-heading.d-flex.align-items-center
@@ -65,26 +59,25 @@ html(lang='en')
                             span.text-primary Bryant
                         img.img-profile-heading.d-lg-none.rounded-circle(src='assets/img/profile.png', alt='Hen Bryant')
                     .subheading.mb-5
-                        | Application Engineer
+                        | アプリケーションエンジニア
                     p.lead.mb-5
                         span.d-block.mb-3
-                            | Former Android Engineer at LINE Yahoo(LY Corporation), where I drove the development of "Yahoo! Car Navigation" and "Yahoo! Maps" from requirement definition to performance optimization. In June 2026, I joined Sumitomo Mitsui Card Company.
+                            | LINEヤフー株式会社（LY Corporation）にてAndroidエンジニアとして従事し、Yahoo!カーナビおよびYahoo!マップの要件定義から性能改善まで幅広く携わりました。2026年6月より、三井住友カード株式会社にてアプリ開発に携わっています。
                         span.d-block.mb-3
-                            | Passionate about mobility tech, location-based services, and FinTech UX.
+                            | モビリティ技術、位置情報サービス、FinTech UX に強い関心があります。
                         span.d-block.mb-2
-                            strong Open to Part-time Opportunities
+                            strong 副業案件募集中
                         span.d-block
-                            | ・Availability: 1–2 days/week (approx. 8–16 hours/week)
+                            | ・現在、週1〜2日（約8〜16時間/週）で参画可能な副業・業務委託のフルリモート案件を募集しています。
                         span.d-block.mb-3
-                            | ・Work Style: Fully Remote
                         span.d-block.mb-2
-                            strong Languages:
+                            strong 言語:
                         span.d-block
-                            | ・Japanese (Native)
+                            | ・日本語（ネイティブ）
                         span.d-block
-                            | ・Chinese (Native)
+                            | ・中国語（ネイティブ）
                         span.d-block
-                            | ・English (Business)
+                            | ・英語（業務レベル）
                     .social-icons
                         a.social-icon(href='mailto:bryant@ymail.ne.jp', aria-label='Email')
                             i.fas.fa-envelope
@@ -98,8 +91,8 @@ html(lang='en')
             // Skills
             section#skills.resume-section
                 .resume-section-content
-                    h2.mb-5 Skills
-                    .subheading.mb-3 Mobile Development & Technologies
+                    h2.mb-5 スキル
+                    .subheading.mb-3 モバイル開発 & 技術
 
                     ul.list-inline.dev-icons
                         li.list-inline-item
@@ -123,129 +116,124 @@ html(lang='en')
                         li.list-inline-item
                             i.fab.fa-slack
 
-                    .subheading.mb-3 Technical Skills
+                    .subheading.mb-3 技術スキル
 
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Android Application Development (Kotlin / Java)
+                            | Android アプリ開発（Kotlin / Java）
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Jetpack Compose / MVVM Architecture
+                            | Jetpack Compose / MVVM アーキテクチャ
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | REST API Integration / Retrofit / JSON Parsing
+                            | REST API 連携 / Retrofit / JSON 解析
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Google Maps SDK / Location-Based Services
+                            | Google Maps SDK / 位置情報サービス
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | UI/UX Improvement & Performance Optimization
+                            | UI/UX 改善 / パフォーマンス最適化
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Git / GitHub / Agile Development / Scrum
+                            | Git / GitHub / Agile 開発 / Scrum
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | React Native / JavaScript / TypeScript (Personal Projects)
+                            | React Native / JavaScript / TypeScript（個人開発）
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | AI-assisted Development using Claude Code / Codex / Cursor
+                            | Claude Code / Codex / Cursor を使った AI 支援開発
 
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | English Communication in Global Teams
+                            | グローバルチームでの英語コミュニケーション
 
             hr.m-0
 
             // Experience
             section#experience.resume-section
-               .resume-section-content
-                    h2.mb-5 Experience
+                .resume-section-content
+                    h2.mb-5 経歴
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Android App Developer
-                            .subheading.mb-3 Vpass
+                            h3.mb-0 Android アプリ開発者
+                            .subheading.mb-3 三井住友カード株式会社 / Vpass
                             p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                                | 三井住友カードにて、Vpass を中心とした Android アプリ開発に従事しています。要件整理から実装、性能改善まで一貫して担当し、安定したモバイル体験の提供に取り組んでいます。
                         .flex-shrink-0
-                            span.text-body June 2026 - Now
+                            span.text-body 2026年6月 - 現在
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 Android App Developer
-                            .subheading.mb-3 Yahoo! CarNavi・Yahoo! Map・Maply
+                            h3.mb-0 Android アプリ開発者
+                            .subheading.mb-3 LINEヤフー株式会社 / Yahoo! カーナビ・Yahoo! マップ・Maply
                             p
-                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                                | LINEヤフー株式会社（LY Corporation）にて、Yahoo! カーナビ、Yahoo! マップ、Maply の開発に携わりました。要件定義から性能改善まで広く担当し、位置情報を活用したユーザー体験の向上に取り組みました。
                         .flex-shrink-0
-                            span.text-body April 2022 - May 2026
+                            span.text-body 2022年4月 - 2026年5月
 
             hr.m-0
 
             // Education
             section#education.resume-section
                 .resume-section-content
-                    h2.mb-5 Education
+                    h2.mb-5 学歴
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
                         .flex-grow-1
-                            h3.mb-0 University of Osaka
-                            .subheading.mb-3 Graduate School of Information Science and Technology
-                            div Computer Science - Software Engineering
+                            h3.mb-0 大阪大学
+                            .subheading.mb-3 大学院情報科学研究科
+                            div コンピュータサイエンス - ソフトウェア工学
                         .flex-shrink-0
-                            span.text-body April 2020 - March 2022
+                            span.text-body 2020年4月 - 2022年3月
 
             hr.m-0
 
-            // Interests
-            section#interests.resume-section
+            // Hobbies
+            section#hobbies.resume-section
                 .resume-section-content
-                    h2.mb-5 Interests
+                    h2.mb-5 趣味
                     p
-                        | I am passionate about mobility technologies, especially map services, navigation systems, and location-based user experiences.
-                        | I am also highly interested in FinTech, stock market analysis, and data-driven product development.
+                        | モビリティ技術、とくに地図サービス、ナビゲーション、位置情報を活用したユーザー体験に強い関心があります。
+                        | そのほか、FinTech、株式市場の分析、データドリブンなプロダクト開発にも興味があります。
 
                     p
-                        | Outside of engineering, I enjoy boxing, basketball, and long-distance running.
-                        | I am currently training toward obtaining a professional boxing license in Japan, which has strengthened my discipline, consistency, and mental resilience.
+                        | 仕事以外では、ボクシング、バスケットボール、長距離ランニングを楽しんでいます。
+                        | 現在は日本でプロボクシングライセンスの取得に向けてトレーニングを続けており、規律や継続力、精神的な強さを磨いています。
 
                     p.mb-0
-                        | I also enjoy road trips and automotive culture, particularly high-performance and enthusiast-oriented vehicles, and I am interested in how technology can improve the driving and ownership experience.
+                        | また、ロードトリップや自動車文化も好きで、高性能車や趣味性の高い車に惹かれます。
+                        | テクノロジーが運転体験や所有体験をどう改善できるかにも関心があります。
 
             hr.m-0
 
             // Awards
             section#awards.resume-section
                 .resume-section-content
-                    h2.mb-5 Awards & Certifications
+                    h2.mb-5 実績
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
                                 i.fas.fa-trophy.text-warning
-                            | Generative AI Award - Hack Day at LY Corporation(2024)
+                            | 生成 AI Award - LY Corporation Hack Day (2024)
                         li
                             span.fa-li
                                 i.fas.fa-trophy.text-warning
-                            | TOIEC 940 (2019)
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
+                            | TOEIC 940点 (2019)
