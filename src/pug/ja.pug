@@ -39,13 +39,13 @@ html(lang='ja')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') 概要
                     li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') スキル
+                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') 経歴
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') 学歴
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') スキル
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') 興味
+                        a.nav-link.js-scroll-trigger(href='#hobbies') 趣味
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#awards') 実績
 
@@ -85,3 +85,155 @@ html(lang='ja')
                             i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/henbryant')
                             i.fab.fa-github
+
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 スキル
+                    .subheading.mb-3 モバイル開発 & 技術
+
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            i.fab.fa-android
+                        li.list-inline-item
+                            iconify-icon(icon='logos:kotlin-icon')
+                        li.list-inline-item
+                            i.fab.fa-java
+                        li.list-inline-item
+                            i.fab.fa-react
+                        li.list-inline-item
+                            iconify-icon(icon='logos:javascript')
+                        li.list-inline-item
+                            iconify-icon(icon='logos:typescript-icon')
+                        li.list-inline-item
+                            iconify-icon(icon='logos:firebase')
+                        li.list-inline-item
+                            iconify-icon(icon='logos:figma')
+                        li.list-inline-item
+                            i.fab.fa-github
+                        li.list-inline-item
+                            i.fab.fa-slack
+
+                    .subheading.mb-3 技術スキル
+
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Android アプリ開発（Kotlin / Java）
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Jetpack Compose / MVVM アーキテクチャ
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | REST API 連携 / Retrofit / JSON 解析
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Google Maps SDK / 位置情報サービス
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | UI/UX 改善 / パフォーマンス最適化
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Git / GitHub / Agile 開発 / Scrum
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | React Native / JavaScript / TypeScript（個人開発）
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Claude Code / Codex / Cursor を使った AI 支援開発
+
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | グローバルチームでの英語コミュニケーション
+
+            hr.m-0
+
+            // Experience
+            section#experience.resume-section
+                .resume-section-content
+                    h2.mb-5 経歴
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Android アプリ開発者
+                            .subheading.mb-3 三井住友カード株式会社 / Vpass
+                            p
+                                | 三井住友カードにて、Vpass を中心とした Android アプリ開発に従事しています。要件整理から実装、性能改善まで一貫して担当し、安定したモバイル体験の提供に取り組んでいます。
+                        .flex-shrink-0
+                            span.text-body 2026年6月 - 現在
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Android アプリ開発者
+                            .subheading.mb-3 LINEヤフー株式会社 / Yahoo! カーナビ・Yahoo! マップ・Maply
+                            p
+                                | LINEヤフー株式会社（LY Corporation）にて、Yahoo! カーナビ、Yahoo! マップ、Maply の開発に携わりました。要件定義から性能改善まで広く担当し、位置情報を活用したユーザー体験の向上に取り組みました。
+                        .flex-shrink-0
+                            span.text-body 2022年4月 - 2026年5月
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 学歴
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 大阪大学
+                            .subheading.mb-3 大学院情報科学研究科
+                            div コンピュータサイエンス - ソフトウェア工学
+                        .flex-shrink-0
+                            span.text-body 2020年4月 - 2022年3月
+
+            hr.m-0
+
+            // Hobbies
+            section#hobbies.resume-section
+                .resume-section-content
+                    h2.mb-5 趣味
+                    p
+                        | モビリティ技術、とくに地図サービス、ナビゲーション、位置情報を活用したユーザー体験に強い関心があります。
+                        | そのほか、FinTech、株式市場の分析、データドリブンなプロダクト開発にも興味があります。
+
+                    p
+                        | 仕事以外では、ボクシング、バスケットボール、長距離ランニングを楽しんでいます。
+                        | 現在は日本でプロボクシングライセンスの取得に向けてトレーニングを続けており、規律や継続力、精神的な強さを磨いています。
+
+                    p.mb-0
+                        | また、ロードトリップや自動車文化も好きで、高性能車や趣味性の高い車に惹かれます。
+                        | テクノロジーが運転体験や所有体験をどう改善できるかにも関心があります。
+
+            hr.m-0
+
+            // Awards
+            section#awards.resume-section
+                .resume-section-content
+                    h2.mb-5 実績
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text-warning
+                            | 生成 AI Award - LY Corporation Hack Day (2024)
+                        li
+                            span.fa-li
+                                i.fas.fa-trophy.text-warning
+                            | TOEIC 940点 (2019)

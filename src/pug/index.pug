@@ -30,7 +30,7 @@ html(lang='en')
             a.navbar-brand.js-scroll-trigger(href='#page-top')
                 span.d-block.d-lg-none Hen Bryant
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.png', alt='Hen Bryant')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='Hen Bryant')
             .nav-controls
                 a.lang-switch.d-none.d-lg-inline-flex(href='ja.html', aria-label='日本語版へ')
                     img.flag-icon(src='assets/img/flag-jp.svg', alt='日本語')
@@ -43,11 +43,11 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') About
                     li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#education') Education
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interests
                     li.nav-item
@@ -95,46 +95,6 @@ html(lang='en')
 
             hr.m-0
 
-            // Experience
-            section#experience.resume-section
-               .resume-section-content
-                    h2.mb-5 Experience
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Android App Developer
-                            .subheading.mb-3 Vpass
-                            p
-                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                        .flex-shrink-0
-                            span.text-body June 2026 - Now
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 Android App Developer
-                            .subheading.mb-3 Yahoo! CarNavi・Yahoo! Map・Maply
-                            p
-                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
-                        .flex-shrink-0
-                            span.text-body April 2022 - May 2026
-
-            hr.m-0
-
-            // Education
-            section#education.resume-section
-                .resume-section-content
-                    h2.mb-5 Education
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            h3.mb-0 University of Osaka
-                            .subheading.mb-3 Graduate School of Information Science and Technology
-                            div Computer Science - Software Engineering
-                        .flex-shrink-0
-                            span.text-body April 2020 - March 2022
-
-            hr.m-0
-
             // Skills
             section#skills.resume-section
                 .resume-section-content
@@ -150,6 +110,8 @@ html(lang='en')
                             i.fab.fa-java
                         li.list-inline-item
                             i.fab.fa-react
+                        li.list-inline-item
+                            iconify-icon(icon='logos:javascript')
                         li.list-inline-item
                             iconify-icon(icon='logos:typescript-icon')
                         li.list-inline-item
@@ -197,7 +159,7 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | React Native / TypeScript (Personal Projects)
+                            | React Native / JavaScript / TypeScript (Personal Projects)
 
                         li
                             span.fa-li
@@ -208,6 +170,46 @@ html(lang='en')
                             span.fa-li
                                 i.fas.fa-check
                             | English Communication in Global Teams
+
+            hr.m-0
+
+            // Experience
+            section#experience.resume-section
+               .resume-section-content
+                    h2.mb-5 Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Android App Developer
+                            .subheading.mb-3 Vpass
+                            p
+                                | Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                        .flex-shrink-0
+                            span.text-body June 2026 - Now
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Android App Developer
+                            .subheading.mb-3 Yahoo! CarNavi・Yahoo! Map・Maply
+                            p
+                                | Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
+                        .flex-shrink-0
+                            span.text-body April 2022 - May 2026
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Education
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 University of Osaka
+                            .subheading.mb-3 Graduate School of Information Science and Technology
+                            div Computer Science - Software Engineering
+                        .flex-shrink-0
+                            span.text-body April 2020 - March 2022
 
             hr.m-0
 
