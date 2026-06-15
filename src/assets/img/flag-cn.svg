@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="China flag">
+  <defs>
+    <polygon id="star" points="0,-1 0.2245,-0.309 0.9511,-0.309 0.3633,0.118 0.5878,0.809 -0.0000,0.382 -0.5878,0.809 -0.3633,0.118 -0.9511,-0.309 -0.2245,-0.309"/>
+  </defs>
+  <rect width="640" height="480" fill="#de2910"/>
+  <g fill="#ffde00">
+    <use href="#star" transform="translate(270 210) scale(72)"/>
+    <use href="#star" transform="translate(380 128) rotate(23.04) scale(24)"/>
+    <use href="#star" transform="translate(430 205) rotate(45.87) scale(24)"/>
+    <use href="#star" transform="translate(410 295) rotate(69.95) scale(24)"/>
+    <use href="#star" transform="translate(335 345) rotate(20.66) scale(24)"/>
+  </g>
+</svg>
