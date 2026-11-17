@@ -12,6 +12,8 @@ Start Bootstrap の Resume テーマをベースに、Android アプリ開発者
 
 ページ内容を変更する場合は、主に `src/pug/index.pug` を編集します。
 
+日本語は `src/pug/index.pug`（`/`・`/index.html`）、英語は `src/pug/en.pug`（`/en.html`）、中国語は `src/pug/zh.pug`（`/zh.html`）で管理しています。旧 `/ja.html` は `src/pug/ja.pug` でトップページへ即時に移動する案内ページとして残しています。
+
 スタイルを変更する場合は `src/scss/` 配下の SCSS ファイルを編集します。画像を差し替える場合は `src/assets/` 配下のファイルを更新します。
 
 リポジトリ直下の `index.html` は GitHub Pages で表示するための生成ファイルです。直接編集すると、次回ビルド時に `src/pug/index.pug` の内容で上書きされます。
@@ -26,7 +28,7 @@ Google が発行した確認用 HTML など、内容を変えずにサイトの�
 
 `src/public/sitemap.xml` と `src/public/robots.txt` を編集し、`npm run build:pages` で `dist/` およびリポジトリ直下へ出力します。公開用ファイルを直接編集せず、ソースと生成物を一緒にコミットしてください。`.gitignore` でサイトマップの3か所を明示的に管理対象にしているため、端末側で `*.xml` が除外されていても登録できます。
 
-サイトマップには英語（`/`）、日本語（`/ja.html`）、中国語（`/zh.html`）の3 URL を掲載します。各 URL の `xhtml:link` は、各ページの `hreflang`（`en`、`ja`、`zh-CN`）と `x-default` に合わせて更新してください。`robots.txt` の `Sitemap` は `https://henbryant.github.io/sitemap.xml` を指します。
+サイトマップには日本語（`/`）、英語（`/en.html`）、中国語（`/zh.html`）の3 URL を掲載します。各 URL の `xhtml:link` は、各ページの `hreflang`（`en`、`ja`、`zh-CN`）と `x-default`（日本語の `/`）に合わせて更新してください。`robots.txt` の `Sitemap` は `https://henbryant.github.io/sitemap.xml` を指します。
 
 ### ローカルで確認する
 
@@ -59,6 +61,9 @@ npm run build:pages
 ```text
 dist/
 index.html
+en.html
+zh.html
+ja.html
 css/
 js/
 assets/
