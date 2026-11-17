@@ -26,9 +26,9 @@ Google が発行した確認用 HTML など、内容を変えずにサイトの�
 
 ### サイトマップと robots.txt
 
-`src/public/sitemap.xml` と `src/public/robots.txt` を編集し、`npm run build:pages` で `dist/` およびリポジトリ直下へ出力します。公開用ファイルを直接編集せず、ソースと生成物を一緒にコミットしてください。`.gitignore` でサイトマップの3か所を明示的に管理対象にしているため、端末側で `*.xml` が除外されていても登録できます。
+`sitemap.xml` は `scripts/build-sitemap.js` が、ビルド済みの日本語・英語・中国語ページの `canonical` URL から自動生成します。UTF-8 の標準 XML サイトマップ（`urlset` → `url` → `loc`）として `dist/` に出力し、`npm run build:pages` でリポジトリ直下にもコピーします。`canonical` が未設定・重複している場合はビルドを失敗させます。公開用 XML は直接編集せず、ページの `canonical` と生成物を一緒にコミットしてください。`.gitignore` の例外により、端末側で `*.xml` が除外されていても生成物を登録できます。
 
-サイトマップには日本語（`/`）、英語（`/en.html`）、中国語（`/zh.html`）の3 URL を掲載します。各 URL の `xhtml:link` は、各ページの `hreflang`（`en`、`ja`、`zh-CN`）と `x-default`（日本語の `/`）に合わせて更新してください。`robots.txt` の `Sitemap` は `https://henbryant.github.io/sitemap.xml` を指します。
+サイトマップには日本語（`/`）、英語（`/en.html`）、中国語（`/zh.html`）の3 URL を掲載します。言語間の関係は各 HTML の `hreflang`（`en`、`ja`、`zh-CN`）と `x-default`（日本語の `/`）で指定します。`robots.txt` は `src/public/robots.txt` で管理し、ビルド時に `dist/` と公開ルートへコピーします。`Sitemap` は `https://henbryant.github.io/sitemap.xml` を指します。
 
 ### ローカルで確認する
 
@@ -78,6 +78,7 @@ robots.txt
 - `npm run build`: HTML、CSS、JavaScript、画像を `dist/` に生成
 - `npm run build:pages`: `dist/` を生成し、GitHub Pages 用にリポジトリ直下へコピー
 - `npm run build:assets`: `src/assets/` を `dist/assets/` に、`src/public/` の中身を `dist/` 直下にコピー
+- `npm run build:sitemap`: ビルド済みの3言語ページの `canonical` から XML サイトマップを `dist/` に生成
 - `npm run build:pug`: `src/pug/` の Pug を HTML に変換して `dist/` に出力
 - `npm run build:scripts`: `src/js/scripts.js` を `dist/` に出力
 - `npm run build:scss`: `src/scss/` の SCSS を CSS に変換して `dist/` に出力
