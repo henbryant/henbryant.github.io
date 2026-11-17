@@ -22,6 +22,12 @@ Google が発行した確認用 HTML など、内容を変えずにサイトの�
 
 `npm run build` で `src/public/` の中身が `dist/` 直下へコピーされ、`npm run build:pages` ではリポジトリ直下にも反映されます。所有権確認後も確認用ファイルは削除せずに残してください。
 
+### サイトマップと robots.txt
+
+`src/public/sitemap.xml` と `src/public/robots.txt` を編集し、`npm run build:pages` で `dist/` およびリポジトリ直下へ出力します。公開用ファイルを直接編集せず、ソースと生成物を一緒にコミットしてください。`.gitignore` でサイトマップの3か所を明示的に管理対象にしているため、端末側で `*.xml` が除外されていても登録できます。
+
+サイトマップには英語（`/`）、日本語（`/ja.html`）、中国語（`/zh.html`）の3 URL を掲載します。各 URL の `xhtml:link` は、各ページの `hreflang`（`en`、`ja`、`zh-CN`）と `x-default` に合わせて更新してください。`robots.txt` の `Sitemap` は `https://henbryant.github.io/sitemap.xml` を指します。
+
 ### ローカルで確認する
 
 初回は依存パッケージをインストールします。
@@ -56,6 +62,8 @@ index.html
 css/
 js/
 assets/
+sitemap.xml
+robots.txt
 ```
 
 `npm run build` は `dist/` だけを更新します。GitHub Pages へ公開するためにリポジトリ直下の `index.html` も更新したい場合は、`npm run build:pages` を使います。

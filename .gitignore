@@ -1,0 +1,5 @@
+# Keep sitemap source and generated copies tracked even when a global ignore excludes XML.
+!/.gitignore
+!/src/public/sitemap.xml
+!/dist/sitemap.xml
+!/sitemap.xml
