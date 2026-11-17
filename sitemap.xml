@@ -3,22 +3,22 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://henbryant.github.io/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://henbryant.github.io/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://henbryant.github.io/ja.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://henbryant.github.io/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://henbryant.github.io/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://henbryant.github.io/zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://henbryant.github.io/" />
   </url>
   <url>
-    <loc>https://henbryant.github.io/ja.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://henbryant.github.io/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://henbryant.github.io/ja.html" />
+    <loc>https://henbryant.github.io/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://henbryant.github.io/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://henbryant.github.io/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://henbryant.github.io/zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://henbryant.github.io/" />
   </url>
   <url>
     <loc>https://henbryant.github.io/zh.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://henbryant.github.io/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://henbryant.github.io/ja.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://henbryant.github.io/en.html" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://henbryant.github.io/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://henbryant.github.io/zh.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://henbryant.github.io/" />
   </url>
