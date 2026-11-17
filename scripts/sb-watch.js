@@ -56,7 +56,7 @@ function _processFile(filePath, watchEvent) {
         return renderScripts();
     }
 
-    if (filePath.match(/src\/assets\//)) {
+    if (filePath.match(/src\/(assets|public)\//)) {
         return renderAssets();
     }
 

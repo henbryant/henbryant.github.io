@@ -16,6 +16,12 @@ Start Bootstrap の Resume テーマをベースに、Android アプリ開発者
 
 リポジトリ直下の `index.html` は GitHub Pages で表示するための生成ファイルです。直接編集すると、次回ビルド時に `src/pug/index.pug` の内容で上書きされます。
 
+### Search Console の所有権確認ファイル
+
+Google が発行した確認用 HTML など、内容を変えずにサイトのルートへ公開するファイルは `src/public/` で管理します。
+
+`npm run build` で `src/public/` の中身が `dist/` 直下へコピーされ、`npm run build:pages` ではリポジトリ直下にも反映されます。所有権確認後も確認用ファイルは削除せずに残してください。
+
 ### ローカルで確認する
 
 初回は依存パッケージをインストールします。
@@ -58,7 +64,7 @@ assets/
 
 - `npm run build`: HTML、CSS、JavaScript、画像を `dist/` に生成
 - `npm run build:pages`: `dist/` を生成し、GitHub Pages 用にリポジトリ直下へコピー
-- `npm run build:assets`: `src/assets/` のファイルを `dist/` にコピー
+- `npm run build:assets`: `src/assets/` を `dist/assets/` に、`src/public/` の中身を `dist/` 直下にコピー
 - `npm run build:pug`: `src/pug/` の Pug を HTML に変換して `dist/` に出力
 - `npm run build:scripts`: `src/js/scripts.js` を `dist/` に出力
 - `npm run build:scss`: `src/scss/` の SCSS を CSS に変換して `dist/` に出力
